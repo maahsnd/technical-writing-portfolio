@@ -9,7 +9,7 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: "Technical Writer — Nick Maahs",
+  title: "Technical Writer — Dev Docs / APIs — Nick Maahs",
   description: "Developer documentation, API reference, and technical writing services.",
 }
 
