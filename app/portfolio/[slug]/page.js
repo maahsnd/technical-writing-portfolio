@@ -7,7 +7,6 @@ function getPostContent(slug) {
     const folder = "portfolio/";
     const file = folder + `/${slug}.md`;
     const content = fs.readFileSync(file, 'utf8');
-
     const matterResult = matter(content);
     return matterResult;
 }
@@ -25,7 +24,6 @@ export async function generateMetadata({ params, searchParams }) {
 export default function PortfolioPage(props) {
     const slug = props.params.slug;
     const post = getPostContent(slug);
-    console.log(post)
     return (
         <main>
             <article>
