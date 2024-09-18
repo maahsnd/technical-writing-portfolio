@@ -1,12 +1,5 @@
-import { Roboto } from "next/font/google"
 import "./globals.css";
 import Link from "next/link";
-
-const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata = {
   title: "Technical Writer — Dev Docs / APIs — Nick Maahs",
@@ -15,12 +8,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
+    <html lang="en">
       <body>
         <header>
           <nav>
             <Link href="/">
-              Home
+              <h1>
+                Nick Maahs
+              </h1>
             </Link>
           </nav>
         </header>
