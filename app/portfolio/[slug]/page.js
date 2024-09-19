@@ -2,7 +2,7 @@ import Markdown from "markdown-to-jsx"
 import { getPostMetadata } from "@/utils/getPostMetadata"
 import { getPostContent } from "@/utils/getPostContent";
 import NotFound from "@/components/notFound/NotFound";
-
+import styles from "./portfolioPage.module.css";
 
 export async function generateStaticParams() {
     const posts = getPostMetadata('portfolio/articles/');
@@ -27,9 +27,9 @@ export default function PortfolioPage(props) {
         }
     }
     return (
-        <div>
+        <div className={styles.container}>
             <article>
-                <h1>{post.data.title}</h1>
+                <h1 className={styles.title}>{post.data.title}</h1>
                 <Markdown>
                     {post.content}
                 </Markdown>
