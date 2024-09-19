@@ -1,3 +1,7 @@
+a {
+  color: black;
+}
+
 a:visited {
   color: black;
 }
@@ -23,3 +27,7 @@ body {
   opacity: 0.1;
 }
 
+h3 {
+  font-weight:200;
+  font-size: 22px;
+}
