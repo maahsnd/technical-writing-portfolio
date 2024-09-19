@@ -27,6 +27,10 @@ body {
   opacity: 0.1;
 }
 
+.contentContainer {
+  margin-left: 20px;
+}
+
 h3 {
   font-weight:200;
   font-size: 22px;
