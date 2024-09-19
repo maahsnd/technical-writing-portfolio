@@ -6,6 +6,12 @@
     width: calc(9 * 38px); 
     height: calc(11 * 38px);
     overflow-y: scroll;
+    position: relative;
+}
+
+/* Remvoes underline on everything wrapped in Link */
+.wrap > a {
+    text-decoration: none;
 }
 
 .postTitle {
@@ -24,7 +30,10 @@
     line-height: 22px;
 }
 
-/* Prevents paragraph (wrapped in Link) from being underlined */
-.wrap > a {
-    text-decoration: none;
+.pageNumber {
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    bottom: 0px;
+    right: 10px
 }

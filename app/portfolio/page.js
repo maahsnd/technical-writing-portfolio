@@ -14,8 +14,8 @@ export default function Portfolio() {
     );
     return (
         <div className={styles.gallery}>
-            {postCardData && postCardData.map((post) => (
-                <PostCard postSlug={post.slug} postTitle={post.title} postCoverNote={post.coverNote} />
+            {postCardData && postCardData.map((post, index) => (
+                <PostCard postSlug={post.slug} postTitle={post.title} postCoverNote={post.coverNote} index={index} />
             ))}
         </div>
     )
