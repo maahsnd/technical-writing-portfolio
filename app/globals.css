@@ -7,8 +7,8 @@ html > * {
   margin: 0;
 }
 
-h1 {
-  margin: 0;
+body {
+  padding: 5px;
 }
 
 .bgWrap {
@@ -22,3 +22,4 @@ h1 {
 .bgWrap > img {
   opacity: 0.1;
 }
+
