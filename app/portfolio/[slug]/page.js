@@ -2,16 +2,7 @@ import Markdown from "markdown-to-jsx"
 import { getPostMetadata } from "@/utils/getPostMetadata"
 import fs from "fs";
 import matter from "gray-matter";
-
-// 404 Component
-function NotFound() {
-    return (
-        <main>
-            <h1>404 - Page Not Found</h1>
-            <p>The page you are looking for does not exist.</p>
-        </main>
-    );
-}
+import NotFound from "@/components/NotFound";
 
 function getPostContent(slug) {
     const folder = "portfolio/";
