@@ -1,7 +1,7 @@
 import "./globals.css";
-import Link from "next/link";
 import Image from "next/image";
 import background from "./topo_tmp.webp"
+import Header from "@/components/header/Header";
 
 export const metadata = {
   title: "Technical Writer — Dev Docs / APIs — Nick Maahs",
@@ -25,15 +25,7 @@ export default function RootLayout({ children }) {
             }}
           />
         </div>
-        <header>
-          <nav>
-            <Link href="/">
-              <h1>
-                Nick Maahs
-              </h1>
-            </Link>
-          </nav>
-        </header>
+        <Header />
         {children}
       </body>
     </html>

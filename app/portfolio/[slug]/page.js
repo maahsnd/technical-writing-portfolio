@@ -2,7 +2,7 @@ import Markdown from "markdown-to-jsx"
 import { getPostMetadata } from "@/utils/getPostMetadata"
 import fs from "fs";
 import matter from "gray-matter";
-import NotFound from "@/components/NotFound";
+import NotFound from "@/components/notFound/NotFound";
 
 function getPostContent(slug) {
     const folder = "portfolio/";
