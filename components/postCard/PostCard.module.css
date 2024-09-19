@@ -1,12 +1,30 @@
 .container {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.067);
+    background-color:whitesmoke;
     margin: 20px;
-    /* the ratio is roughly 9:11; i.e a piece of paper */
-    width: 300px; 
-    height: 333px;
+    /* the ratio is 9:11; i.e a piece of paper */
+    width: calc(9 * 38px); 
+    height: calc(11 * 38px);
+    overflow-y: scroll;
 }
 
 .postTitle {
     text-align: center;
+    padding: 5px;
+    margin: 0;
+    text-decoration: underline;
+}
+
+/* md with multiple paragraphs is rendered inside a containing div */
+.coverNote > p, .coverNote > div > p{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 5px;
+    line-height: 22px;
+}
+
+/* Prevents paragraph (wrapped in Link) from being underlined */
+.wrap > a {
+    text-decoration: none;
 }

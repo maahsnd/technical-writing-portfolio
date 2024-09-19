@@ -18,7 +18,7 @@ export default function PortfolioPage(props) {
     const slug = props.params.slug;
     let post;
     try {
-        post = getPostContent(slug);
+        post = getPostContent(slug, "portfolio/articles/");
     } catch (error) {
         if (error.message === 'PostNotFound') {
             return <NotFound />;
