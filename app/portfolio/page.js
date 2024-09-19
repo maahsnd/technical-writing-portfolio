@@ -5,7 +5,7 @@ import styles from "./portfolio.module.css";
 export default function Portfolio() {
     return (
         <div className={styles.gallery}>
-            {getPostMetadata('portfolio').map((post) => (
+            {getPostMetadata('portfolio/articles/').map((post) => (
                 <PostCard post={post} />
             ))}
         </div>

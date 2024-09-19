@@ -1,28 +1,11 @@
 import Markdown from "markdown-to-jsx"
 import { getPostMetadata } from "@/utils/getPostMetadata"
-import fs from "fs";
-import matter from "gray-matter";
+import { getPostContent } from "@/utils/getPostContent";
 import NotFound from "@/components/notFound/NotFound";
-import styles from "./portfolioPage.module.css";
 
-function getPostContent(slug) {
-    const folder = "portfolio/";
-    const file = folder + `${slug}.md`;
-    try {
-        const content = fs.readFileSync(file, 'utf8');
-        const matterResult = matter(content);
-        return matterResult;
-    } catch (error) {
-        if (error.code === 'ENOENT') {
-            throw new Error('PostNotFound');
-        } else {
-            throw error;
-        }
-    }
-}
 
 export async function generateStaticParams() {
-    const posts = getPostMetadata('portfolio');
+    const posts = getPostMetadata('portfolio/articles/');
     return posts.map((post) => ({ slug: post.slug }))
 }
 
