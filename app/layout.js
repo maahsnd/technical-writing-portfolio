@@ -1,6 +1,6 @@
 import "./globals.css";
 import Image from "next/image";
-import background from "./topo_tmp.webp"
+import background from "@/public/topo_bg.jpg";
 import Header from "@/components/header/Header";
 
 export const metadata = {
