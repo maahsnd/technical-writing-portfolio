@@ -17,7 +17,12 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link href={`/`}>
+            <Link href={`/contact`}>
+              <h3>Contact</h3>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/miscellany`}>
               <h3>Miscellany</h3>
             </Link>
           </li>
