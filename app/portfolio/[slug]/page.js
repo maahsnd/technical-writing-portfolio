@@ -3,6 +3,7 @@ import { getPostMetadata } from "@/utils/getPostMetadata"
 import fs from "fs";
 import matter from "gray-matter";
 import NotFound from "@/components/notFound/NotFound";
+import styles from "./portfolioPage.module.css";
 
 function getPostContent(slug) {
     const folder = "portfolio/";
@@ -43,13 +44,14 @@ export default function PortfolioPage(props) {
         }
     }
     return (
-        <main>
+        <div>
             <article>
                 <h1>{post.data.title}</h1>
                 <Markdown>
                     {post.content}
                 </Markdown>
             </article>
-        </main>
+        </div>
+
     )
 }
