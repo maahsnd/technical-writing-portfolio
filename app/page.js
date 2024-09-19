@@ -12,7 +12,7 @@ export default function Home() {
             </Link>
           </li>
           <li>
-            <Link href={`/`}>
+            <Link href={`/development`}>
               <h3>Development</h3>
             </Link>
           </li>
