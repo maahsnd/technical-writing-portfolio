@@ -10,10 +10,19 @@ export default function Home() {
         <ul>
           <li>
             <Link href={`/portfolio`}>
-              <h3>Portfolio</h3>
+              <h3>Technical Writing</h3>
             </Link>
           </li>
-
+          <li>
+            <Link href={`/`}>
+              <h3>Development</h3>
+            </Link>
+          </li>
+          <li>
+            <Link href={`/`}>
+              <h3>Miscellany</h3>
+            </Link>
+          </li>
         </ul>
       </div>
     </main>
