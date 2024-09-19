@@ -1,0 +1,12 @@
+.container {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.067);
+    margin: 20px;
+    /* the ratio is roughly 9:11; i.e a piece of paper */
+    width: 300px; 
+    height: 333px;
+}
+
+.postTitle {
+    text-align: center;
+}
