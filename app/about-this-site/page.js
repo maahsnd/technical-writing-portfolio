@@ -33,7 +33,7 @@ export default function AboutThisSite() {
             <article>
                 <Markdown>{post.content}</Markdown>
                 <div className={styles.repoContainer}>
-                    <p>For more detail, visit this site's GitHub repo: </p>
+                    <p>For more detail, visit the GitHub repo for this site: </p>
                     <Link href={'https://github.com/maahsnd/technical-writing-portfolio'} target="_blank" rel="noopener noreferrer">
                         <img
                             src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
