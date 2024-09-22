@@ -2,7 +2,7 @@ import fs from "fs";
 import matter from "gray-matter";
 
 export function getPostContent(slug, folder) {
-    const file = folder + `${slug}.md`;
+    const file = folder ? folder + `${slug}.md` : `${slug}.md`;
     try {
         const content = fs.readFileSync(file, 'utf8');
         const matterResult = matter(content);
