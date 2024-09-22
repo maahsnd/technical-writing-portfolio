@@ -22,6 +22,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link href={`/about-this-site`}>
+              <h3>About This Site</h3>
+            </Link>
+          </li>
+          <li>
             <Link href={`/miscellany`}>
               <h3>Miscellany</h3>
             </Link>
