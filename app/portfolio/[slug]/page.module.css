@@ -1,0 +1,28 @@
+.container {
+    padding:0 20px;
+    background-color:whitesmoke;
+    margin: 20px 20px 20px 0;
+    width: calc(100% - 40px);
+    height: 100%;
+    overflow-y: scroll;
+    position: relative;
+}
+
+
+.title {
+    text-decoration: underline black;
+    text-align: center;
+    }
+
+/* styling markdown headers, list items */
+.container > article > div > h3,
+ .container > article > div > h2 {
+    font-size: 20px;
+    text-decoration: underline black;
+}
+
+.container > article > div > h3,
+ .container > article > div > ul > li,
+ .container > article > div > ol> li {
+    margin: 7.5px 0;
+}

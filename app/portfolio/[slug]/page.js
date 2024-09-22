@@ -2,7 +2,7 @@ import Markdown from "markdown-to-jsx"
 import { getPostMetadata } from "@/utils/getPostMetadata"
 import { getPostContent } from "@/utils/getPostContent";
 import NotFound from "@/components/notFound/NotFound";
-import styles from "./portfolioPage.module.css";
+import styles from "./page.module.css";
 
 export async function generateStaticParams() {
     const posts = getPostMetadata('portfolio/articles/');
