@@ -1,5 +1,10 @@
 import Link from "next/link"
 import styles from "./page.module.css";
+
+export async function generateMetadata() {
+    return { title: "Development" };
+}
+
 export default function DevHome() {
     return (
         <div className={styles.container}>

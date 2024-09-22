@@ -1,5 +1,9 @@
 import styles from './page.module.css'
 
+export async function generateMetadata() {
+    return { title: "Contact" };
+}
+
 export default function Contact() {
     return (
 

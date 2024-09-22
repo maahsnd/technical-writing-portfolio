@@ -11,9 +11,8 @@ export async function generateStaticParams() {
     return posts.map((post) => ({ slug: post.slug }))
 }
 
-export async function generateMetadata({ params }) {
-    const id = params?.slug ? ' | ' + params.slug : '';
-    return { title: `Portfolio ${id.replaceAll('_', ' ')}` };
+export async function generateMetadata() {
+    return { title: "About This Site" };
 }
 
 export default function AboutThisSite() {
