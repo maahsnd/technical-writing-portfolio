@@ -2,6 +2,7 @@ import "./globals.css";
 import Image from "next/image";
 import background from "@/public/topo_bg.jpg";
 import Header from "@/components/header/Header";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Technical Writer — Dev Docs / APIs — Nick Maahs",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header></Header>
         <div className="contentContainer">
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
