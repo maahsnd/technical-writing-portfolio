@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
             style={{
               objectFit: "cover",
             }}
+            priority="true"
           />
         </div>
         <Header></Header>
