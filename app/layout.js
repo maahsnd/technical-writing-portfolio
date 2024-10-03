@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
       <body>
         <div className='bgWrap'>
           <Image
+
             alt="Topographical map"
             src={background}
             placeholder="blur"
